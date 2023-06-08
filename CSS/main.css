@@ -1,0 +1,194 @@
+.corpo {
+  background-color: #f8f8f8;
+}
+
+.cabecalho {
+  background: linear-gradient(90deg, #574ae8, #3ea1db);
+  text-align: center;
+  padding: 4.5%;
+  box-shadow: 0px 3px 8px 0px #808080b0;
+}
+
+.titulo_cabecalho {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.secao_lista {
+  font-family: "lato";
+  margin: 5% auto;
+  width: 35%;
+  position: relative;
+  z-index: 51;
+}
+
+.secao_lista .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.formulario {
+  display: flex;
+}
+
+.nova_tarefa_campo {
+  width: 100%;
+  height: 43px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+}
+
+.nova_tarefa_campo:focus {
+  outline: 1px solid #3ea1db;
+}
+
+.bt_nova_tarefa {
+  width: auto;
+  background-color: #4c72e3;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "nunito", sans-serif;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.bt_nova_tarefa:hover {
+  cursor: pointer;
+  transform: scale(105%);
+  transition: 250ms;
+}
+
+.lista_tarefas {
+  box-shadow: 0px 3px 5px #808080b4;
+  min-height: 50vh;
+  border-radius: 4px;
+}
+
+.item_tarefas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c5c5c5;
+  background-color: #ffffff;
+  width: 100%;
+  padding-left: 2%;
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.item_tarefas:hover {
+  cursor: pointer;
+}
+
+.item_tarefas.checked .txt_tarefa {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  transition: 350ms;
+  width: 55%;
+}
+
+.txt_tarefa::before {
+  content: url(../Conteudo/check.svg);
+  visibility: hidden;
+}
+
+.item_tarefas.checked .txt_tarefa::before {
+  visibility: visible;
+}
+
+.txt_tarefa {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.bt_fechar_item {
+  font-size: 20px;
+  color: #808080;
+  height: 50px;
+  padding: 0.3% 3%;
+  display: flex;
+  align-items: center;
+}
+
+.bt_fechar_item:hover {
+  cursor: pointer;
+  background-color: #f44336;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.item_tarefas.fechado {
+  display: none;
+}
+
+.teste {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  cursor: pointer;
+}
+
+.dica_campo {
+  visibility: visible;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1.5% 2%;
+  position: absolute;
+  z-index: 1;
+  top: -10%;
+}
+
+.dica_campo::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.formulario .dica_bt {
+  visibility: visible;
+  width: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1.5% 2%;
+  position: absolute;
+  z-index: 1;
+  top: -10%;
+  left: 70%;
+}
+
+.dica_bt::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 90%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}

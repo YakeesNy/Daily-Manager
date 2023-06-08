@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daily Manager</title>
+    <link rel="shortcut icon" href="Conteudo/list.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="CSS/reset.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="CSS/responsividade.css"
+    />
+
+    <!-- fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lexend+Deca:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="corpo">
+    <div class="teste"></div>
+    <header class="cabecalho">
+      <h1 class="titulo_cabecalho">Daily Manager</h1>
+    </header>
+
+    <section class="secao_lista">
+      <div class="container">
+        <form class="formulario" method="post">
+          <span class="dica_campo">Digite sua tarefa no campo</span>
+
+          <input
+            class="nova_tarefa_campo"
+            type="text"
+            placeholder="Crie uma nova tarefa"
+          />
+          <button class="bt_nova_tarefa">Add</button>
+          <span class="dica_bt">Clique e adicione</span>
+        </form>
+
+        <ul class="lista_tarefas">
+          <li class="item_tarefas">
+            <p class="txt_tarefa">Exemplo de tarefa</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script src="JS/main.js"></script>
+</html>

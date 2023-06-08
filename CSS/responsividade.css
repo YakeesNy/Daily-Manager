@@ -1,0 +1,13 @@
+@media (max-width: 425px) {
+  .cabecalho {
+    padding: 8.5%;
+  }
+
+  .titulo_cabecalho {
+    font-size: 24px;
+  }
+
+  .secao_lista {
+    width: 90%;
+  }
+}
